@@ -8,3 +8,6 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- Keep the institutional bakery pages as separate TanStack routes with shared header/footer and shared catalog data, so navigation and page metadata remain consistent.
+- The academic contact form only prepares a downloadable inquiry without storing or sending personal data; real delivery requires a verified contact channel.
