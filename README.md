@@ -1,10 +1,10 @@
-# Doce Encanto — Site da Confeitaria Artesanal
+# Rosa Confeitaria — Site da Confeitaria Artesanal
 
 Projeto da atividade de extensão **"Desenvolvimento Web Comunitário com IA e Git"**.
 Este site institucional foi criado para um parceiro da comunidade local, uma confeitaria artesanal.
 
 ## Parceiro beneficiado
-- **Nome:** Doce Encanto Confeitaria (empresa fictícia para fins acadêmicos)
+- **Nome:** Rosa Confeitaria (empresa fictícia para fins acadêmicos)
 - **Ramo:** Confeitaria artesanal (bolos, doces, cupcakes, kits e sobremesas)
 - **Local:** Foz do Iguaçu/PR (localização fictícia)
 

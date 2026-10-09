@@ -12,9 +12,9 @@ export const produtos = [
 
 export function pageHead(titulo: string, descricao: string) {
   return { meta: [
-    { title: `${titulo} — Doce Encanto Confeitaria` },
+    { title: `${titulo} — Rosa Confeitaria` },
     { name: 'description', content: descricao },
-    { property: 'og:title', content: `${titulo} — Doce Encanto Confeitaria` },
+    { property: 'og:title', content: `${titulo} — Rosa Confeitaria` },
     { property: 'og:description', content: descricao },
     { property: 'og:type', content: 'website' },
     { name: 'twitter:card', content: 'summary_large_image' },
