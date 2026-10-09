@@ -5,7 +5,7 @@ import { PageIntro } from '@/components/confeitaria';
 import { Button } from '@/components/ui/button';
 import { pageHead } from '@/lib/confeitaria';
 
-export const Route = createFileRoute('/contato')({ validateSearch: (search: Record<string, unknown>): { produto?: string } => ({ produto: typeof search['produto'] === 'string' ? search['produto'] : undefined }), head: () => pageHead('Contato e encomendas', 'Prepare sua consulta para bolos e doces personalizados da Doce Encanto, em Foz do Iguaçu.'), component: Contato });
+export const Route = createFileRoute('/contato')({ validateSearch: (search: Record<string, unknown>): { produto?: string } => typeof search['produto'] === 'string' ? { produto: search['produto'] } : {}, head: () => pageHead('Contato e encomendas', 'Prepare sua consulta para bolos e doces personalizados da Doce Encanto, em Foz do Iguaçu.'), component: Contato });
 function Contato() {
   const { produto } = Route.useSearch();
   const [resumo, setResumo] = useState('');
