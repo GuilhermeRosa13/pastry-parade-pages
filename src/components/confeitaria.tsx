@@ -9,7 +9,7 @@ const links = [{ to: '/', label: 'Início' }, { to: '/sobre', label: 'Sobre nós
 export function SiteHeader() {
   const [aberto, setAberto] = useState(false);
   return <header className="site-header"><div className="site-container flex items-center justify-between gap-4 py-5">
-    <Link to="/" className="brand flex items-center gap-3" onClick={() => setAberto(false)}><CakeSlice className="size-8 text-primary" /><span><span className="block font-display text-2xl leading-none">Rosa Confeitaria</span><span className="mt-1 block text-[10px] uppercase">Confeitaria artesanal</span></span></Link>
+    <Link to="/" className="brand flex items-center gap-3" onClick={() => setAberto(false)}><CakeSlice className="size-8 text-primary" /><span><span className="block font-display text-2xl leading-none">Rosa</span><span className="mt-1 block text-[10px] uppercase">Confeitaria artesanal</span></span></Link>
     <nav aria-label="Navegação principal" className="hidden items-center gap-7 text-sm md:flex">{links.map(l => <Link key={l.to} to={l.to} activeProps={{ className: 'text-primary' }} activeOptions={{ exact: true }}>{l.label}</Link>)}</nav>
     <Button asChild className="hidden lg:inline-flex"><Link to="/contato">Encomendar <ArrowUpRight /></Link></Button>
     <Button variant="ghost" size="icon" className="md:hidden" aria-label={aberto ? 'Fechar menu' : 'Abrir menu'} aria-expanded={aberto} onClick={() => setAberto(!aberto)}>{aberto ? <X /> : <Menu />}</Button>

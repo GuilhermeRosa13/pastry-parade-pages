@@ -18,7 +18,7 @@ function Index() {
         <div className="hero-veil absolute inset-0 -z-10" />
         <div className="site-container py-14 md:py-20"><div className="hero-copy max-w-md">
           <p className="eyebrow flex items-center gap-2"><span className="h-px w-7 bg-primary" />Feito à mão. Feito com amor.</p>
-          <h1 className="mt-5 font-display text-5xl leading-[1.12] md:text-6xl">Rosa Confeitaria<br /><em className="text-primary">Confeitaria</em></h1>
+          <h1 className="mt-5 font-display text-5xl leading-[1.12] md:text-6xl">Rosa<br /><em className="text-primary">Confeitaria</em></h1>
           <p className="mt-6 max-w-xs text-base leading-relaxed text-foreground/80">Bolos, doces e pequenos encantos para transformar momentos em boas memórias.</p>
           <div className="mt-8 flex flex-wrap gap-3"><Button asChild size="lg"><Link to="/produtos">Conhecer os produtos <ArrowRight /></Link></Button><Button asChild variant="outline" size="lg"><Link to="/contato">Encomendar <ArrowUpRight /></Link></Button></div>
           <p className="mt-9 flex items-center gap-2 text-xs text-muted-foreground"><Heart className="size-4 text-primary" />Confeitaria artesanal em Foz do Iguaçu</p>
