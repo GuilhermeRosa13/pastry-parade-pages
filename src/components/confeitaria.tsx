@@ -9,7 +9,7 @@ const links = [{ to: '/', label: 'Início' }, { to: '/sobre', label: 'Sobre nós
 export function SiteHeader() {
   const [aberto, setAberto] = useState(false);
   return <header className="site-header"><div className="site-container flex items-center justify-between gap-4 py-5">
-    <Link to="/" className="brand flex items-center gap-3" onClick={() => setAberto(false)}><CakeSlice className="size-8 text-primary" /><span><span className="block font-display text-2xl leading-none">Rosa</span><span className="mt-1 block text-[10px] uppercase">Confeitaria artesanal</span></span></Link>
+    <Link to="/" className="brand flex items-center gap-3" onClick={() => setAberto(false)}><CakeSlice className="size-8 text-primary" /><span><span className="block font-display text-2xl leading-none">Doce Encanto</span><span className="mt-1 block text-[10px] uppercase">Confeitaria artesanal</span></span></Link>
     <nav aria-label="Navegação principal" className="hidden items-center gap-7 text-sm md:flex">{links.map(l => <Link key={l.to} to={l.to} activeProps={{ className: 'text-primary' }} activeOptions={{ exact: true }}>{l.label}</Link>)}</nav>
     <Button asChild className="hidden lg:inline-flex"><Link to="/contato">Encomendar <ArrowUpRight /></Link></Button>
     <Button variant="ghost" size="icon" className="md:hidden" aria-label={aberto ? 'Fechar menu' : 'Abrir menu'} aria-expanded={aberto} onClick={() => setAberto(!aberto)}>{aberto ? <X /> : <Menu />}</Button>
@@ -17,7 +17,7 @@ export function SiteHeader() {
 }
 
 export function SiteFooter() {
-  return <footer className="border-t bg-background py-10"><div className="site-container flex flex-col justify-between gap-6 md:flex-row"><div><Link to="/" className="font-display text-2xl">Rosa Confeitaria</Link><p className="mt-2 text-sm text-muted-foreground">Um pouco de carinho em cada doce.</p></div><div className="text-sm text-muted-foreground"><p>Foz do Iguaçu · Paraná</p><p className="mt-2">© 2026 Rosa Confeitaria</p><p className="mt-2 text-xs">Projeto acadêmico · Confeitaria fictícia · Imagens ilustrativas</p></div></div></footer>;
+  return <footer className="border-t bg-background py-10"><div className="site-container flex flex-col justify-between gap-6 md:flex-row"><div><Link to="/" className="font-display text-2xl">Doce Encanto</Link><p className="mt-2 text-sm text-muted-foreground">Um pouco de carinho em cada doce.</p></div><div className="text-sm text-muted-foreground"><p>Foz do Iguaçu · Paraná</p><p className="mt-2">© 2026 Doce Encanto Confeitaria</p><p className="mt-2 text-xs">Projeto acadêmico · Confeitaria fictícia · Imagens ilustrativas</p></div></div></footer>;
 }
 
 export function PageIntro({ eyebrow, title, children }: { eyebrow: string; title: string; children: React.ReactNode }) {
