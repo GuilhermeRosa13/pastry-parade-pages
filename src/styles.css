@@ -64,28 +64,29 @@
 }
 
 :root {
-  --radius: 1rem;
+  --radius: 0.5rem;
   --font-display: "Fraunces", serif;
   --font-sans: "Nunito Sans", sans-serif;
-  --background: oklch(0.975 0.015 70);
-  --foreground: oklch(0.3 0.05 30);
-  --card: oklch(0.99 0.008 70);
-  --card-foreground: oklch(0.129 0.042 264.695);
+  --background: oklch(0.993 0.003 70);
+  --foreground: oklch(0.3 0.035 30);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.3 0.035 30);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.129 0.042 264.695);
-  --primary: oklch(0.55 0.13 15);
+  --primary: oklch(0.49 0.115 10);
   --primary-foreground: oklch(0.984 0.003 247.858);
-  --secondary: oklch(0.93 0.04 15);
-  --secondary-foreground: oklch(0.208 0.042 265.755);
+  --secondary: oklch(0.955 0.024 10);
+  --secondary-foreground: oklch(0.3 0.035 30);
   --muted: oklch(0.968 0.007 247.896);
-  --muted-foreground: oklch(0.5 0.04 40);
+  --muted-foreground: oklch(0.48 0.023 30);
   --accent: oklch(0.968 0.007 247.896);
   --accent-foreground: oklch(0.208 0.042 265.755);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.984 0.003 247.858);
-  --border: oklch(0.88 0.03 50);
-  --input: oklch(0.929 0.013 255.508);
-  --ring: oklch(0.704 0.04 256.788);
+  --border: oklch(0.9 0.012 30);
+  --input: oklch(0.87 0.015 30);
+  --ring: oklch(0.49 0.115 10);
+  --hero-veil: oklch(0.965 0.016 70);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
@@ -144,5 +145,25 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
+    font-family: var(--font-sans);
+    letter-spacing: 0;
   }
 }
+
+.site-container { width: min(1160px, 100%); margin-inline: auto; padding-inline: 28px; }
+.site-header { background: var(--background); border-bottom: 1px solid var(--border); }
+.eyebrow { color: var(--primary); font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0; }
+.bakery-hero { min-height: 530px; }
+.hero-photo { object-position: center 55%; }
+.hero-veil { background: linear-gradient(90deg, var(--hero-veil) 0%, oklch(from var(--hero-veil) l c h / .93) 26%, oklch(from var(--hero-veil) l c h / .15) 52%, transparent 66%); }
+.form-label { display: grid; gap: 8px; font-size: 14px; font-weight: 600; }
+.form-field { width: 100%; border: 1px solid var(--input); border-radius: var(--radius); background: var(--card); padding: 12px 14px; color: var(--foreground); font-weight: 400; outline: none; }
+.form-field:focus { border-color: var(--ring); box-shadow: 0 0 0 2px oklch(from var(--ring) l c h / .15); }
+@media (max-width: 767px) {
+  .site-container { padding-inline: 20px; }
+  .bakery-hero { min-height: 630px; }
+  .hero-photo { object-position: 65% bottom; }
+  .hero-veil { background: linear-gradient(180deg, var(--hero-veil) 0%, oklch(from var(--hero-veil) l c h / .96) 35%, oklch(from var(--hero-veil) l c h / .6) 60%, transparent 90%); }
+  .hero-copy { max-width: 100%; }
+}
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; } }

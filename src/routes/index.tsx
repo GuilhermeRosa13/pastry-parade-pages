@@ -1,84 +1,34 @@
-import { createFileRoute } from "@tanstack/react-router";
-import hero from "@/assets/hero.jpg";
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { ArrowRight, ArrowUpRight, Heart } from 'lucide-react';
+import hero from "@/assets/doce-encanto.jpg";
+import { Button } from '@/components/ui/button';
+import { ProductGrid, Diferenciais } from '@/components/confeitaria';
+import { pageHead } from '@/lib/confeitaria';
 
 export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "Doce Ateliê — Confeitaria Artesanal" },
-      { name: "description", content: "Bolos, tortas, macarons e doces finos feitos à mão. Encomende para sua festa." },
-      { property: "og:title", content: "Doce Ateliê — Confeitaria Artesanal" },
-      { property: "og:description", content: "Bolos, tortas, macarons e doces finos feitos à mão." },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
-    ],
-  }),
+  head: () => pageHead('Confeitaria artesanal em Foz do Iguaçu', 'Doce Encanto: bolos personalizados, doces, cupcakes e kits comemorativos feitos para celebrar.'),
   component: Index,
 });
 
-const produtos = [
-  { nome: "Bolos de Festa", desc: "Massas leves e recheios generosos, decorados sob medida.", preco: "a partir de R$ 180" },
-  { nome: "Tortas", desc: "Torta de morango, limão siciliano e chocolate belga.", preco: "a partir de R$ 95" },
-  { nome: "Macarons", desc: "Caixas com sabores de pistache, framboesa e baunilha.", preco: "R$ 48 / 6 un." },
-  { nome: "Doces Finos", desc: "Brigadeiros gourmet e bem-casados para casamentos.", preco: "a partir de R$ 3,50 / un." },
-];
-
 function Index() {
   return (
-    <main className="font-sans">
-      <header className="mx-auto flex max-w-6xl items-center justify-between px-6 py-6">
-        <span className="font-display text-2xl font-bold text-primary">Doce Ateliê</span>
-        <nav className="hidden gap-8 text-sm font-semibold md:flex">
-          <a href="#cardapio" className="hover:text-primary">Cardápio</a>
-          <a href="#sobre" className="hover:text-primary">Sobre</a>
-          <a href="#contato" className="hover:text-primary">Contato</a>
-        </nav>
-      </header>
-
-      <section className="mx-auto grid max-w-6xl items-center gap-10 px-6 py-12 md:grid-cols-2">
-        <div>
-          <p className="text-sm font-semibold uppercase tracking-widest text-primary">Confeitaria artesanal</p>
-          <h1 className="mt-4 font-display text-5xl leading-tight md:text-6xl">
-            Doçura feita à mão, <em className="text-primary">todos os dias</em>.
-          </h1>
-          <p className="mt-6 max-w-md text-lg text-muted-foreground">
-            Bolos, tortas e doces finos preparados com ingredientes selecionados para tornar seus momentos inesquecíveis.
-          </p>
-          <a href="#contato" className="mt-8 inline-block rounded-full bg-primary px-8 py-3 font-semibold text-primary-foreground transition hover:opacity-90">
-            Fazer encomenda
-          </a>
-        </div>
-        <img src={hero} alt="Vitrine com macarons, torta de morango e bolo de chocolate" width={1600} height={1008} className="aspect-[4/3] w-full rounded-3xl object-cover shadow-xl" />
+    <main>
+      <section className="bakery-hero relative isolate overflow-hidden">
+        <img src={hero} alt="Bolo rosa com morangos, brigadeiros e cupcakes artesanais" width={1600} height={1000} fetchPriority="high" className="hero-photo absolute inset-0 -z-20 h-full w-full object-cover" />
+        <div className="hero-veil absolute inset-0 -z-10" />
+        <div className="site-container py-14 md:py-20"><div className="hero-copy max-w-md">
+          <p className="eyebrow flex items-center gap-2"><span className="h-px w-7 bg-primary" />Feito à mão. Feito com amor.</p>
+          <h1 className="mt-5 font-display text-5xl leading-[1.12] md:text-6xl">Doce Encanto<br /><em className="text-primary">Confeitaria</em></h1>
+          <p className="mt-6 max-w-xs text-base leading-relaxed text-foreground/80">Bolos, doces e pequenos encantos para transformar momentos em boas memórias.</p>
+          <div className="mt-8 flex flex-wrap gap-3"><Button asChild size="lg"><Link to="/produtos">Conhecer os produtos <ArrowRight /></Link></Button><Button asChild variant="outline" size="lg"><Link to="/contato">Encomendar <ArrowUpRight /></Link></Button></div>
+          <p className="mt-9 flex items-center gap-2 text-xs text-muted-foreground"><Heart className="size-4 text-primary" />Confeitaria artesanal em Foz do Iguaçu</p>
+        </div></div>
       </section>
-
-      <section id="cardapio" className="bg-secondary py-20">
-        <div className="mx-auto max-w-6xl px-6">
-          <h2 className="text-center font-display text-4xl">Nosso cardápio</h2>
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {produtos.map((p) => (
-              <div key={p.nome} className="rounded-2xl border bg-card p-6 transition hover:-translate-y-1 hover:shadow-lg">
-                <h3 className="font-display text-xl">{p.nome}</h3>
-                <p className="mt-2 text-sm text-muted-foreground">{p.desc}</p>
-                <p className="mt-4 text-sm font-bold text-primary">{p.preco}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section id="sobre" className="mx-auto max-w-3xl px-6 py-20 text-center">
-        <h2 className="font-display text-4xl">Nossa história</h2>
-        <p className="mt-6 text-lg text-muted-foreground">
-          Nascemos do amor pela confeitaria e das receitas de família. Cada doce é preparado em pequenas fornadas, sem conservantes, com o cuidado que você merece.
-        </p>
-      </section>
-
-      <section id="contato" className="border-t py-16">
-        <div className="mx-auto grid max-w-6xl gap-8 px-6 text-center md:grid-cols-3">
-          <div><h3 className="font-display text-xl">Endereço</h3><p className="mt-2 text-muted-foreground">Rua das Flores, 123 — São Paulo</p></div>
-          <div><h3 className="font-display text-xl">Horário</h3><p className="mt-2 text-muted-foreground">Ter a Sáb, 9h às 19h</p></div>
-          <div><h3 className="font-display text-xl">Encomendas</h3><p className="mt-2 text-muted-foreground">WhatsApp (11) 99999-0000</p></div>
-        </div>
-        <p className="mt-12 text-center text-xs text-muted-foreground">© 2026 Doce Ateliê</p>
+      <section className="site-container py-16"><div className="mb-9 flex flex-wrap items-end justify-between gap-4"><div><p className="eyebrow">Para cada ocasião</p><h2 className="mt-3 font-display text-3xl md:text-4xl">Um mundo de doçuras</h2></div><Button asChild variant="link"><Link to="/produtos">Ver todo o catálogo <ArrowRight /></Link></Button></div><ProductGrid /></section>
+      <Diferenciais />
+      <section className="site-container py-16 text-center"><p className="eyebrow">Nossa essência</p><h2 className="mt-3 font-display text-3xl md:text-4xl">Mais que doces, boas memórias.</h2><p className="mx-auto mt-5 max-w-xl leading-relaxed text-muted-foreground">Uma confeitaria com alma artesanal, pensada para acompanhar as celebrações e os pequenos gestos de carinho.</p><Button asChild variant="link" className="mt-5"><Link to="/sobre">Conheça a Doce Encanto <ArrowRight /></Link></Button></section>
+      <section className="border-t py-12"><div className="site-container text-center"><h2 className="font-display text-3xl">Palavras que adoçam</h2><p className="mt-4 text-sm text-muted-foreground">Os depoimentos de clientes estarão aqui quando o projeto tiver um parceiro real.</p></div></section>
+      <section className="bg-secondary py-14"><div className="site-container flex flex-col items-center justify-between gap-6 text-center md:flex-row md:text-left"><div><p className="eyebrow">Sua próxima celebração</p><h2 className="mt-3 font-display text-3xl">Vamos criar algo especial?</h2></div><Button asChild size="lg"><Link to="/contato">Planejar minha encomenda <ArrowUpRight /></Link></Button></div>
       </section>
     </main>
   );
