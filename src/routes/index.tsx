@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, ArrowUpRight, Heart } from 'lucide-react';
-import hero from "@/assets/doce-encanto.jpg";
+import hero from "@/assets/rosa-confeitaria.jpg";
 import { Button } from '@/components/ui/button';
 import { ProductGrid, Diferenciais } from '@/components/confeitaria';
 import { pageHead } from '@/lib/confeitaria';
