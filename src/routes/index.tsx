@@ -6,7 +6,7 @@ import { ProductGrid, Diferenciais } from '@/components/confeitaria';
 import { pageHead } from '@/lib/confeitaria';
 
 export const Route = createFileRoute("/")({
-  head: () => pageHead('Confeitaria artesanal em Foz do Iguaçu', 'Doce Encanto: bolos personalizados, doces, cupcakes e kits comemorativos feitos para celebrar.'),
+  head: () => pageHead('Confeitaria artesanal em Austin, Nova Iguaçu', 'Doce Encanto: bolos personalizados, doces, cupcakes e kits comemorativos feitos para celebrar.'),
   component: Index,
 });
 
@@ -21,7 +21,7 @@ function Index() {
           <h1 className="mt-5 font-display text-5xl leading-[1.12] md:text-6xl">Doce Encanto<br /><em className="text-primary">Confeitaria</em></h1>
           <p className="mt-6 max-w-xs text-base leading-relaxed text-foreground/80">Bolos, doces e pequenos encantos para transformar momentos em boas memórias.</p>
           <div className="mt-8 flex flex-wrap gap-3"><Button asChild size="lg"><Link to="/produtos">Conhecer os produtos <ArrowRight /></Link></Button><Button asChild variant="outline" size="lg"><Link to="/contato">Encomendar <ArrowUpRight /></Link></Button></div>
-          <p className="mt-9 flex items-center gap-2 text-xs text-muted-foreground"><Heart className="size-4 text-primary" />Confeitaria artesanal em Foz do Iguaçu</p>
+          <p className="mt-9 flex items-center gap-2 text-xs text-muted-foreground"><Heart className="size-4 text-primary" />Confeitaria artesanal em Austin, Nova Iguaçu</p>
         </div></div>
       </section>
       <section className="site-container py-16"><div className="mb-9 flex flex-wrap items-end justify-between gap-4"><div><p className="eyebrow">Para cada ocasião</p><h2 className="mt-3 font-display text-3xl md:text-4xl">Um mundo de doçuras</h2></div><Button asChild variant="link"><Link to="/produtos">Ver todo o catálogo <ArrowRight /></Link></Button></div><ProductGrid /></section>
