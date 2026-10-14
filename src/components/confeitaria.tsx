@@ -17,7 +17,7 @@ export function SiteHeader() {
 }
 
 export function SiteFooter() {
-  return <footer className="border-t bg-background py-10"><div className="site-container flex flex-col justify-between gap-6 md:flex-row"><div><Link to="/" className="font-display text-2xl">Doce Encanto</Link><p className="mt-2 text-sm text-muted-foreground">Um pouco de carinho em cada doce.</p></div><div className="text-sm text-muted-foreground"><p>Foz do Iguaçu · Paraná</p><p className="mt-2">© 2026 Doce Encanto Confeitaria</p><p className="mt-2 text-xs">Projeto acadêmico · Confeitaria fictícia · Imagens ilustrativas</p></div></div></footer>;
+  return <footer className="border-t bg-background py-10"><div className="site-container flex flex-col justify-between gap-6 md:flex-row"><div><Link to="/" className="font-display text-2xl">Doce Encanto</Link><p className="mt-2 text-sm text-muted-foreground">Um pouco de carinho em cada doce.</p></div><div className="text-sm text-muted-foreground"><p>Austin · Nova Iguaçu</p><p className="mt-2">© 2026 Doce Encanto Confeitaria</p><p className="mt-2 text-xs">Projeto acadêmico · Confeitaria fictícia · Imagens ilustrativas</p></div></div></footer>;
 }
 
 export function PageIntro({ eyebrow, title, children }: { eyebrow: string; title: string; children: React.ReactNode }) {

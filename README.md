@@ -6,7 +6,7 @@ Este site institucional foi criado para um parceiro da comunidade local, uma con
 ## Parceiro beneficiado
 - **Nome:** Doce Encanto Confeitaria (empresa fictícia para fins acadêmicos)
 - **Ramo:** Confeitaria artesanal (bolos, doces, cupcakes, kits e sobremesas)
-- **Local:** Foz do Iguaçu/PR (localização fictícia)
+- **Local:** Austin, Nova Iguaçu/RJ (localização fictícia)
 
 ## Objetivo
 Dar presença digital à confeitaria conforme o PDF do projeto: apresentar produtos, proposta da marca, galeria e formas de contato. Valores e disponibilidade são consultados por contato.
