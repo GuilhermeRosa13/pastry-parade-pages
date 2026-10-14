@@ -22,7 +22,7 @@ Dar presença digital à confeitaria conforme o PDF do projeto: apresentar produ
 - Página "Sobre nós" e diferenciais
 - Galeria com ampliação das imagens ilustrativas
 - Contato: consulta preparada e salva em texto, sem envio nem armazenamento
-- WhatsApp pendente de número real; endereço e horários não fornecidos no PDF
+- WhatsApp (21) 98253-0132; endereço e horários não fornecidos no PDF
 - Layout que se adapta a celular e computador
 
 ## Ferramentas utilizadas
@@ -42,4 +42,7 @@ bun run dev
 - Repositório: *(inserir link)*
 
 ## Equipe
-- *(nomes dos integrantes)*
+- Lohane Silva da Rocha de Souza
+- Guilherme Costa Rosa
+
+**Professor orientador:** Hamilcar Silva
