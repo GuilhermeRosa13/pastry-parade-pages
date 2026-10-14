@@ -4,9 +4,9 @@ Projeto da atividade de extensão **"Desenvolvimento Web Comunitário com IA e G
 Este site institucional foi criado para um parceiro da comunidade local, uma confeitaria artesanal.
 
 ## Parceiro beneficiado
-- **Nome:** Doce Encanto Confeitaria (empresa fictícia para fins acadêmicos)
+- **Nome:** Doce Encanto Confeitaria (atividade de extensão sem fins lucrativos)
 - **Ramo:** Confeitaria artesanal (bolos, doces, cupcakes, kits e sobremesas)
-- **Local:** Austin, Nova Iguaçu/RJ (localização fictícia)
+- **Local:** Austin, Nova Iguaçu/RJ (localização de referência do projeto)
 
 ## Objetivo
 Dar presença digital à confeitaria conforme o PDF do projeto: apresentar produtos, proposta da marca, galeria e formas de contato. Valores e disponibilidade são consultados por contato.
