@@ -39,7 +39,7 @@ bun run dev
 
 ## Links
 - Site publicado: https://pastry-parade-pages.lovable.app/
-- Repositório: *(inserir link)*
+- Repositório: https://github.com/GuilhermeRosa13/pastry-parade-pages
 
 ## Equipe
 - Lohane Silva da Rocha de Souza
