@@ -46,5 +46,5 @@ bun run dev
 - Lohane Silva da Rocha de Souza
 - Guilherme Costa Rosa
 
-**Instituição:** UNIG — Curso de Análise e Desenvolvimento de Sistemas
-**Professor orientador:** Hamilcar Silva
+-**Instituição:** UNIG — Curso de Análise e Desenvolvimento de Sistemas
+-**Professor orientador:** Hamilcar Silva
