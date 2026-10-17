@@ -10,7 +10,7 @@ const NEXT_KEY = "doce-encanto-next";
 
 export const Route = createFileRoute("/entrar")({
   ssr: false,
-  validateSearch: (s: Record<string, unknown>) => ({ next: typeof s.next === "string" ? s.next : undefined }),
+  validateSearch: (s: Record<string, unknown>) => ({ next: typeof s['next'] === "string" ? s['next'] : undefined }),
   head: () => pageHead("Entrar", "Acesse sua conta para conectar assistentes de IA à Doce Encanto Confeitaria."),
   component: Entrar,
 });
