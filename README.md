@@ -7,6 +7,7 @@ Este site institucional foi criado para um parceiro da comunidade local, uma con
 - **Nome:** Doce Encanto Confeitaria (atividade de extensão sem fins lucrativos)
 - **Ramo:** Confeitaria artesanal (bolos, doces, cupcakes, kits e sobremesas)
 - **Local:** Austin, Nova Iguaçu/RJ (localização de referência do projeto)
+- **Natureza do projeto:** atividade de extensão voluntária, sem fins lucrativos
 
 ## Objetivo
 Dar presença digital à confeitaria conforme o PDF do projeto: apresentar produtos, proposta da marca, galeria e formas de contato. Valores e disponibilidade são consultados por contato.
@@ -21,7 +22,7 @@ Dar presença digital à confeitaria conforme o PDF do projeto: apresentar produ
 - Catálogo com filtros de bolos, doces, cupcakes e kits
 - Página "Sobre nós" e diferenciais
 - Galeria com ampliação das imagens ilustrativas
-- Contato: consulta preparada e salva em texto, sem envio nem armazenamento
+- Contato: o formulário monta a mensagem e abre o WhatsApp da confeitaria com o texto pronto; o site não armazena os dados
 - WhatsApp (21) 98253-0132; endereço e horários não fornecidos no PDF
 - Layout que se adapta a celular e computador
 
@@ -45,4 +46,5 @@ bun run dev
 - Lohane Silva da Rocha de Souza
 - Guilherme Costa Rosa
 
+**Instituição:** UNIG — Curso de Análise e Desenvolvimento de Sistemas
 **Professor orientador:** Hamilcar Silva
