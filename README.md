@@ -1,16 +1,17 @@
 # Doce Encanto — Site da Confeitaria Artesanal
 
-Projeto da atividade de extensão **"Desenvolvimento Web Comunitário com IA e Git"**.
-Este site institucional foi criado para um parceiro da comunidade local, uma confeitaria artesanal.
+Projeto da atividade de extensão **"Desenvolvimento Web Comunitário com IA e Git"**, do curso de Análise e Desenvolvimento de Sistemas (ADS) da **UNIG**.
+
+Este site institucional foi criado, de forma voluntária e sem fins lucrativos, para um parceiro real da comunidade local: uma confeitaria artesanal.
 
 ## Parceiro beneficiado
 - **Nome:** Doce Encanto Confeitaria (atividade de extensão sem fins lucrativos)
 - **Ramo:** Confeitaria artesanal (bolos, doces, cupcakes, kits e sobremesas)
-- **Local:** Austin, Nova Iguaçu/RJ (localização de referência do projeto)
+- **Local:** Austin, Nova Iguaçu/RJ 
 - **Natureza do projeto:** atividade de extensão voluntária, sem fins lucrativos
 
 ## Objetivo
-Dar presença digital à confeitaria conforme o PDF do projeto: apresentar produtos, proposta da marca, galeria e formas de contato. Valores e disponibilidade são consultados por contato.
+Dar presença digital à confeitaria conforme as necessidades levantadas com o cliente: apresentar produtos, proposta da marca, galeria e formas de contato. Valores e disponibilidade são consultados por contato.
 
 ## ODS atendidas
 - **ODS 8:** ajuda na digitalização de um pequeno negócio local.
@@ -23,14 +24,14 @@ Dar presença digital à confeitaria conforme o PDF do projeto: apresentar produ
 - Página "Sobre nós" e diferenciais
 - Galeria com ampliação das imagens ilustrativas
 - Contato: o formulário monta a mensagem e abre o WhatsApp da confeitaria com o texto pronto; o site não armazena os dados
-- WhatsApp (21) 98253-0132; endereço e horários não fornecidos no PDF
+- WhatsApp (21) 98253-0132
 - Layout que se adapta a celular e computador
 
 ## Ferramentas utilizadas
 - **Lovable** (desenvolvimento assistido por IA)
 - React + TanStack Start + Tailwind CSS
 - Git e GitHub (versionamento)
-- Hospedagem: Lovable (publicação pendente)
+- Hospedagem: Lovable (publicado)
 
 ## Como rodar localmente
 ```bash
