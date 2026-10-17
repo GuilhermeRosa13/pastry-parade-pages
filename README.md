@@ -38,7 +38,7 @@ bun run dev
 ```
 
 ## Links
-- Site publicado: *(inserir link)*
+- Site publicado: https://pastry-parade-pages.lovable.app/
 - Repositório: *(inserir link)*
 
 ## Equipe
