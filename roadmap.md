@@ -6,4 +6,4 @@
 - [x] Aviso sobre a natureza do projeto retirado da página de contato, a pedido do usuário (14/10/2026).
 - [x] Botão do formulário de contato agora diz "Enviar" (antes "Preparar consulta"), a pedido do usuário (14/10/2026).
 - [x] Rodapé e README agora dizem "Atividade de extensão sem fins lucrativos" (14/10/2026).
-- [x] Seção "Sobre este projeto" na página Sobre nós, com autores, curso (ADS/UNIG) e atividade de extensão Gestão de Carreira, a pedido do usuário (14/10/2026).
+- [x] Seção "Palavras que adoçam" e o aviso de que o projeto ainda não tem parceiro real removidos da página inicial, a pedido do usuário (17/10/2026).
